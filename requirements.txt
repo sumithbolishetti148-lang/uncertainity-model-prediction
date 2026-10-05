@@ -1,0 +1,18 @@
+# Supported with Python 3.11–3.12; Python 3.13+ package wheels may vary.
+pandas==2.2.3
+numpy==2.2.4
+scipy==1.15.2
+scikit-learn==1.6.1
+joblib==1.4.2
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+streamlit==1.44.1
+shap==0.47.2
+matplotlib==3.10.1
+pillow==11.3.0
+python-multipart==0.0.20
+httpx==0.28.1
+requests==2.32.3
+pytest==8.3.5
+torch==2.6.0
+python-dotenv==1.2.4

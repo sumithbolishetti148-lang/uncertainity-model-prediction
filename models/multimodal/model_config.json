@@ -1,0 +1,315 @@
+{
+  "clinical_dim": 12,
+  "embedding_dim": 16,
+  "num_classes": 2,
+  "patient_id_column": "patient_id",
+  "target": "cvd_label",
+  "training_patient_ids": [
+    "patient_0001",
+    "patient_0002",
+    "patient_0003",
+    "patient_0004",
+    "patient_0005",
+    "patient_0006",
+    "patient_0007",
+    "patient_0008",
+    "patient_0009",
+    "patient_0010",
+    "patient_0011",
+    "patient_0012",
+    "patient_0013",
+    "patient_0014",
+    "patient_0015",
+    "patient_0016",
+    "patient_0017",
+    "patient_0018",
+    "patient_0019",
+    "patient_0020",
+    "patient_0021",
+    "patient_0022",
+    "patient_0023",
+    "patient_0024",
+    "patient_0025",
+    "patient_0026",
+    "patient_0027",
+    "patient_0028",
+    "patient_0029",
+    "patient_0030",
+    "patient_0031",
+    "patient_0032",
+    "patient_0033",
+    "patient_0034",
+    "patient_0035",
+    "patient_0036",
+    "patient_0037",
+    "patient_0038",
+    "patient_0039",
+    "patient_0040",
+    "patient_0041",
+    "patient_0042",
+    "patient_0043",
+    "patient_0044",
+    "patient_0045",
+    "patient_0046",
+    "patient_0047",
+    "patient_0048",
+    "patient_0049",
+    "patient_0050"
+  ],
+  "internal_test_patient_ids": [
+    "patient_0034",
+    "patient_0044",
+    "patient_0001",
+    "patient_0023",
+    "patient_0022",
+    "patient_0037",
+    "patient_0002",
+    "patient_0014"
+  ],
+  "classes": [
+    "0",
+    "1"
+  ],
+  "positive_class": "1",
+  "modality_order": [
+    "clinical",
+    "ecg",
+    "image"
+  ],
+  "seed": 42,
+  "alignment": {
+    "clinical_patients": 50,
+    "ecg_patients": 50,
+    "image_patients": 50,
+    "missing_ecg_patient_ids": [],
+    "missing_image_patient_ids": [],
+    "unmatched_ecg_patient_ids": [],
+    "unmatched_image_patient_ids": [],
+    "complete_triplets": 50,
+    "clinical_only": 0,
+    "missing_patient_ids": 0
+  },
+  "metrics": {
+    "validation": {
+      "accuracy": 0.375,
+      "precision": 0.0,
+      "recall_sensitivity": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.4666666666666667,
+      "pr_auc": 0.7592857142857143,
+      "confusion_matrix": [
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "negative",
+        "positive"
+      ],
+      "n": 8
+    },
+    "test": {
+      "accuracy": 0.5,
+      "precision": 0.0,
+      "recall_sensitivity": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.5625,
+      "pr_auc": 0.6916666666666667,
+      "confusion_matrix": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "negative",
+        "positive"
+      ],
+      "n": 8
+    },
+    "clinical_logistic_test": {
+      "accuracy": 0.75,
+      "precision": 0.75,
+      "recall_sensitivity": 0.75,
+      "specificity": 0.75,
+      "f1": 0.75,
+      "roc_auc": 0.9375,
+      "pr_auc": 0.95,
+      "confusion_matrix": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "n": 8
+    },
+    "unimodal_test": {
+      "clinical": {
+        "validation": {
+          "accuracy": 0.375,
+          "precision": 0.5,
+          "recall_sensitivity": 0.2,
+          "specificity": 0.6666666666666666,
+          "f1": 0.2857142857142857,
+          "roc_auc": 0.33333333333333337,
+          "pr_auc": 0.6726190476190477,
+          "confusion_matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        },
+        "test": {
+          "accuracy": 0.625,
+          "precision": 0.6666666666666666,
+          "recall_sensitivity": 0.5,
+          "specificity": 0.75,
+          "f1": 0.5714285714285714,
+          "roc_auc": 0.6875,
+          "pr_auc": 0.7333333333333333,
+          "confusion_matrix": [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        }
+      },
+      "ecg": {
+        "validation": {
+          "accuracy": 0.375,
+          "precision": 0.0,
+          "recall_sensitivity": 0.0,
+          "specificity": 1.0,
+          "f1": 0.0,
+          "roc_auc": 0.8,
+          "pr_auc": 0.8766666666666667,
+          "confusion_matrix": [
+            [
+              3,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        },
+        "test": {
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall_sensitivity": 0.0,
+          "specificity": 1.0,
+          "f1": 0.0,
+          "roc_auc": 0.4375,
+          "pr_auc": 0.5416666666666666,
+          "confusion_matrix": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        }
+      },
+      "image": {
+        "validation": {
+          "accuracy": 0.625,
+          "precision": 0.625,
+          "recall_sensitivity": 1.0,
+          "specificity": 0.0,
+          "f1": 0.7692307692307693,
+          "roc_auc": 0.0,
+          "pr_auc": 0.46928571428571425,
+          "confusion_matrix": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        },
+        "test": {
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall_sensitivity": 1.0,
+          "specificity": 0.0,
+          "f1": 0.6666666666666666,
+          "roc_auc": 0.0,
+          "pr_auc": 0.39880952380952384,
+          "confusion_matrix": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "negative",
+            "positive"
+          ],
+          "n": 8
+        }
+      }
+    }
+  },
+  "loss": "cross_entropy + contrastive_weight * symmetric InfoNCE"
+}

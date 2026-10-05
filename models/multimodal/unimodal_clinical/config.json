@@ -1,0 +1,9 @@
+{
+  "modality": "clinical",
+  "clinical_dim": 12,
+  "embedding_dim": 16,
+  "classes": [
+    "0",
+    "1"
+  ]
+}
